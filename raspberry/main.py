@@ -15,7 +15,7 @@ class Detector(object):
             src=0, usePiCamera=True, resolution=(640, 480), framerate=32).start()
         self.fire_cascade = cv2.CascadeClassifier('fire_detection.xml')
         self.host = '192.168.1.223'
-        self.port = 8485
+        self.port = 8486
         time.sleep(2.0)
         self.timeCheck = time.time()
         self.socket_client = SocketClient()
